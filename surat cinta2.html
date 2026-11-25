@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rayyaisha senjayang chantiq ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(
+        135deg,
+        #ffc0cb,
+        #e6b5ff,
+        #ffb6c1
+    );
+    overflow-x: hidden;
+    color: #74364c;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.88);
+    border-radius: 25px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(140,40,80,0.2);
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: #d94c7b;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #a35b78;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.envelope {
+    width: 220px;
+    height: 145px;
+    background: #ff7fa4;
+    margin: 35px auto;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    box-shadow: 0 10px 20px #d77a9b;
+}
+
+.envelope:hover {
+    transform: translateY(-8px);
+}
+
+.envelope::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-top: 90px solid #ffb0c7;
+    z-index: 2;
+    transform-origin: top;
+    transition: 0.7s;
+}
+
+.envelope::after {
+    content: "❤️";
+    position: absolute;
+    font-size: 35px;
+    top: 65px;
+    left: 93px;
+    z-index: 3;
+}
+
+.envelope.open::before {
+    transform: rotateX(180deg);
+}
+
+.instruction {
+    font-size: 15px;
+    color: #bd6585;
+    margin-top: 20px;
+}
+
+#letter {
+    display: none;
+    text-align: left;
+    line-height: 1.9;
+    margin-top: 25px;
+    animation: fadeIn 1.5s ease;
+}
+
+#letter h2 {
+    text-align: center;
+    color: #d94c7b;
+    margin-bottom: 25px;
+}
+
+#letter p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.signature {
+    text-align: right !important;
+    color: #d94c7b;
+    font-style: italic;
+    margin-top: 35px;
+}
+
+button {
+    border: none;
+    background: #e85d88;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c83c6c;
+    transform: scale(1.05);
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #ff4f85;
+    animation: floatUp linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #bd7690;
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    .card {
+        padding: 23px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #letter {
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h1>Untuk senja Sayanggkuuuu ❤️</h1>
+
+        <p class="subtitle">
+            selamat pagii sayanggkuuu.....
+        </p>
+
+        <div class="envelope" id="envelope"
+             onclick="openLetter()">
+        </div>
+
+        <p class="instruction" id="instruction">
+            Klik amplop ini untuk membuka suratmu 💌
+        </p>
+
+        <div id="letter">
+
+            <h2>halo senja sayangg ❤️</h2>
+
+            <p>
+                selamat pagi sayang...
+            </p>
+
+            <p>
+                Selamat pagi untuk seseorang yang selalu punya
+                tempat spesial di hatiku. Semoga pagi ini kamu
+                bangun dengan perasaan bahagia, hati yang
+                tenang, dan senyuman indah di wajahmu.
+            </p>
+
+            <p>
+                Aku berharap hari ini menjadi hari yang baik 
+                untukmu. Apa pun yang akan kamu hadapi nanti, 
+                semoga semuanya dimudahkan. Kalau ada hal yang 
+                membuatmu lelah, jangan lupa istirahat. Kalau ada 
+                masalah, jangan terlalu keras pada dirimu sendiri,
+                ya. Kamu juga berhak mendapatkan waktu untuk 
+                menenangkan pikiran dan menikmati hari.
+            </p>
+
+            <p>
+                Aku mungkin tidak selalu bisa berada di sampingmu 
+                setiap saat, tetapi aku ingin kamu tahu bahwa ada 
+                seseorang yang selalu berharap kamu baik-baik saja. 
+                Aku ingin melihatmu bahagia, mendengar ceritamu, 
+                dan menjadi salah satu alasan kecil yang membuat 
+                harimu terasa lebih menyenangkan.
+            </p>
+
+            <p>
+                Terima kasih sudah hadir dalam hidupku. Terima kasih 
+                sudah menjadi bagian dari hari-hariku. Aku bersyukur 
+                bisa mengenal seseorang sepertimu. Jangan pernah merasa 
+                sendirian menghadapi dunia ini, karena aku selalu ingin 
+                menjadi seseorang yang bisa kamu ajak berbagi cerita, 
+                baik tentang kebahagiaan maupun kesedihan.
+            </p>
+
+            <p>
+                Jangan lupa sarapan, minum air putih, dan jaga kesehatanmu, 
+                ya. Jangan terlalu sibuk sampai lupa memperhatikan dirimu 
+                sendiri.
+            </p>
+
+            <p>
+               Semoga hari ini dipenuhi banyak hal baik, banyak senyuman, 
+               dan sedikit sekali kesedihan. Semoga semua urusanmu lancar 
+               dan setiap langkahmu membawa kebahagiaan.
+            </p>
+
+            <p>
+               Sekali lagi, selamat pagi, manusia kesayanganku. Semangat 
+               menjalani hari ini, ya. Jangan lupa tersenyum, karena senyummu 
+               adalah salah satu hal sederhana yang selalu ingin aku lihat.
+            </p>
+
+            <p class="signature">
+                Dengan penuh ketulusan,<br>
+                Seseorang yang ingin melihatmu bahagia
+                senja ❤️
+            </p>
+
+        </div>
+
+        <button id="replay" class="hidden"
+                onclick="replayLetter()">
+            Baca Surat Lagi 💌
+        </button>
+
+        <div class="footer">
+            HAMDAN LILLAH ❤️
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+let opened = false;
+
+function openLetter() {
+
+    if (opened) return;
+
+    opened = true;
+
+    const envelope = document.getElementById("envelope");
+    const letter = document.getElementById("letter");
+    const instruction = document.getElementById("instruction");
+    const replay = document.getElementById("replay");
+
+    envelope.classList.add("open");
+
+    instruction.innerHTML =
+        "Surat spesial untukmu ❤️";
+
+    setTimeout(() => {
+
+        envelope.style.display = "none";
+        instruction.style.display = "none";
+
+        letter.style.display = "block";
+        replay.classList.remove("hidden");
+
+    }, 900);
+}
+
+function replayLetter() {
+
+    document.getElementById("letter").style.display = "none";
+    document.getElementById("replay").classList.add("hidden");
+
+    const envelope = document.getElementById("envelope");
+    const instruction = document.getElementById("instruction");
+
+    envelope.style.display = "block";
+    envelope.classList.remove("open");
+
+    instruction.style.display = "block";
+    instruction.innerHTML =
+        "Klik amplop ini untuk membuka suratmu 💌";
+
+    opened = false;
+}
+
+// Animasi hati berjatuhan
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.innerHTML = ["❤️", "💕", "💗", "💖", "💘"][
+        Math.floor(Math.random() * 5)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize =
+        (15 + Math.random() * 20) + "px";
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 9000);
+}
+
+setInterval(createHeart, 450);
+
+</script>
+
+</body>
+</html>
