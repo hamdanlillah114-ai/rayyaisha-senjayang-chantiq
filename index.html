@@ -4,446 +4,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>rayyaisha senjayang chantiq ❤️</title>
+<title>Maafkan Aku ❤️</title>
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #fff0f5;
-    color: #5c3045;
-    overflow-x: hidden;
-}
-
-header {
+    margin: 0;
+    padding: 20px;
     min-height: 100vh;
-    background: linear-gradient(
-        rgba(65, 20, 50, .55),
-        rgba(65, 20, 50, .65)
-    ),
-    url('foto-utama.jpg') center/cover;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 25px;
+    align-items: center;
+    background: linear-gradient(135deg, #ffb6c9, #ffe0e9);
+    font-family: Arial, sans-serif;
 }
 
-.hero h1 {
-    font-size: 55px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-.hero button {
-    margin-top: 25px;
-    padding: 14px 30px;
-    border: none;
-    border-radius: 30px;
-    background: #ff8fab;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.hero button:hover {
-    background: #fb6f92;
-    transform: scale(1.08);
-}
-
-section {
-    padding: 70px 8%;
-    text-align: center;
-}
-
-.judul {
-    font-size: 35px;
-    margin-bottom: 15px;
-    color: #d6336c;
-}
-
-.subtitle {
-    margin-bottom: 35px;
-    color: #9d5874;
-}
-
-/* CERITA */
-
-.story {
-    max-width: 750px;
-    margin: auto;
-    line-height: 2;
-    font-size: 17px;
+.container {
     background: white;
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 5px 25px #e9a7bf55;
-}
-
-/* GALERI */
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
-}
-
-.photo {
-    background: white;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px #d98aa855;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.photo:hover {
-    transform: translateY(-8px) rotate(-1deg);
-}
-
-.photo img {
     width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.photo p {
-    padding: 12px 5px;
-    font-size: 15px;
-}
-
-/* TIMELINE */
-
-.timeline {
-    max-width: 650px;
-    margin: auto;
-}
-
-.timeline-item {
-    background: white;
-    padding: 25px;
-    margin: 20px 0;
-    border-left: 5px solid #ff8fab;
-    border-radius: 12px;
-    text-align: left;
-    box-shadow: 0 4px 15px #e9a7bf55;
-}
-
-.timeline-item h3 {
-    color: #d6336c;
-    margin-bottom: 10px;
-}
-
-/* SURAT */
-
-.letter {
-    background: linear-gradient(135deg, #ffe0eb, #fff);
-    padding: 40px;
-    border-radius: 20px;
-    max-width: 750px;
-    margin: auto;
-    line-height: 2;
-    font-size: 17px;
-}
-
-/* FOOTER */
-
-footer {
-    background: #8e4163;
-    color: white;
-    padding: 30px;
+    max-width: 420px;
+    padding: 30px 22px;
+    border-radius: 22px;
     text-align: center;
+    box-shadow: 0 10px 30px #d77c9a55;
 }
-
-/* ANIMASI */
 
 .heart {
-    position: fixed;
-    bottom: -20px;
-    color: #ff5c8a;
-    animation: naik 6s linear infinite;
-    pointer-events: none;
-    z-index: 10;
+    font-size: 55px;
+    animation: beat 1s infinite;
 }
 
-@keyframes naik {
-    0% {
-        transform: translateY(0) rotate(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
-    }
+@keyframes beat {
+    50% { transform: scale(1.2); }
 }
 
-/* LIGHTBOX */
-
-.lightbox {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: #000d;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    padding: 20px;
+h1 {
+    color: #e75480;
 }
 
-.lightbox img {
-    max-width: 90%;
-    max-height: 85vh;
-    border-radius: 15px;
+p {
+    color: #555;
+    line-height: 1.7;
 }
 
-.close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
+.question {
+    background: #fff0f5;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    padding: 12px 17px;
+    margin: 6px;
+    border-radius: 20px;
+    background: #ff78a5;
     color: white;
-    font-size: 40px;
+    font-size: 14px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-@media(max-width:600px) {
-    .hero h1 {
-        font-size: 38px;
-    }
+button:hover {
+    background: #e75480;
+    transform: scale(1.05);
+}
 
-    .judul {
-        font-size: 28px;
-    }
+.answer {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fff0f5;
+    border-radius: 12px;
+    color: #d63370;
+    display: none;
+    line-height: 1.6;
+}
 
-    section {
-        padding: 55px 6%;
-    }
-
-    .story, .letter {
-        padding: 25px;
-    }
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #aaa;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <div class="hero">
-        <h1>Our Memories ❤️</h1>
-        <p>
-           aku sayangg kamu...<br>
-            rayyaisha senjayang chantiq<br>
-            aku kangen kamuu nick...
-        </p>
-        <button onclick="document.getElementById('galeri').scrollIntoView({behavior:'smooth'})">
-            Lihat galeri kita 💗
+<div class="container">
+
+    <div class="heart">❤️</div>
+
+    <h1>Maafkan Aku Sayang</h1>
+
+    <p>
+        Hai sayangku... ❤️
+        <br><br>
+        maafin aku yakk, janji dehh mau berhenti
+        tapi dengan cara mengurangi bukan langsung
+        berhenti, aku ga bisa langsung berhenti gitu
+        sayang.
+        <br><br>
+        kamu juga kurangi makan yang pedes-pedes ya 
+        sayangkuuu, aku juga kawatir klo kamu sakit 
+        perutnya jadi kurangi makan pedes yaa.
+        <br><br>
+        terahir deh maafin yak sayangggkuuu....
+        <br><br>
+        Aku sayang kamu. ❤️
+    </p>
+
+    <hr>
+
+    <h3 style="color:#e75480;">
+        Aku mau tanya sesuatu...
+    </h3>
+
+    <div class="question">
+        <p>1. di maafin ga aku ini?</p>
+        <button onclick="jawab('makasih yakk sayangg udah di maafin i love ❤️')">
+            iyaaa ❤️
+        </button>
+        <button onclick="jawab('yaudah deh gapapa 🥺')">
+            NGGA 🥺
         </button>
     </div>
-</header>
 
-<section>
-    <h2 class="judul">Tentang Kita 💕</h2>
-    <p class="subtitle">Dua orang, satu cerita, banyak kenangan.</p>
-
-    <div class="story">
-        Aku tidak tahu bagaimana awalnya semua ini terjadi.
-        Yang aku tahu, kehadiranmu memberikan warna baru
-        dalam hidupku.
-
-        <br><br>
-
-        Kita mungkin tidak selalu sempurna.
-        Ada tawa, cerita, perbedaan, dan berbagai momen
-        yang telah kita lewati bersama.
-
-        <br><br>
-
-        Tapi satu hal yang ingin aku sampaikan,
-        terima kasih sudah menjadi bagian dari perjalanan
-        hidupku.
-
-        <br><br>
-
-        Semoga suatu hari nanti kita bisa melihat semua
-        foto ini dan berkata:
-
-        <br><br>
-
-        <b>"Baru kenal udah pacaran wkwk.." ❤️</b>
+    <div class="question">
+        <p>2.kamuu sayang gaa sama aku?</p>
+        <button onclick="jawab('makacii yaaa udahhh sayang sama akuuu ❤️')">
+            Iya sayangg
+        </button>
+        <button onclick="jawab('yahh berarti cuma aku dong yang sayang sama kamu ❤️')">
+            NGGA
+        </button>
     </div>
-</section>
 
-<section id="galeri">
-    <h2 class="judul">Galeri Kenangan 📸</h2>
-    <p class="subtitle">Kumpulan momen indah yang tidak ingin dilupakan.</p>
+    <div id="hasil" class="answer"></div>
 
-    <div class="gallery">
+    <hr>
 
-        <div class="photo">
-            <img src="1.jpeg" onclick="lihat(this.src)">
-            <p>Awal cerita kita ❤️</p>
-        </div>
+    <h3 style="color:#e75480;">
+        Satu pertanyaan terakhir...
+    </h3>
 
-        <div class="photo">
-            <img src="3.jpeg" onclick="lihat(this.src)">
-            <p>Momen paling bahagia 💗</p>
-        </div>
+    <p>dimaafin ngga aku ini sayanag?</p>
 
-        <div class="photo">
-            <img src="5.jpeg" onclick="lihat(this.src)">
-            <p>Senyum yang selalu dirindukan 🥰</p>
-        </div>
-
-        <div class="photo">
-            <img src="6.jpeg" onclick="lihat(this.src)">
-            <p>Kenangan yang tak terlupakan 💕</p>
-        </div>
-
-        <div class="photo">
-            <img src="DSC00257.JPG" onclick="lihat(this.src)">
-            <p>Waktu bersama kamu 🌷</p>
-        </div>
-
-        <div class="photo">
-            <img src="DSC00269.JPG" onclick="lihat(this.src)">
-            <p>Selalu menjadi cerita indah ❤️</p>
-        </div>
-
+    <div class="footer">
+        Dibuat dengan penuh ketulusan ❤️
+        <br>
+        akuu sayanggg senjayangg cantiq
     </div>
-</section>
 
-<section>
-    <h2 class="judul">Perjalanan Kita 🌹</h2>
-    <p class="subtitle">Setiap perjalanan punya cerita tersendiri.</p>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-            <h3>💌 Pertama Bertemu</h3>
-            <p>
-                Sebuah pertemuan sederhana yang menjadi
-                awal dari cerita indah kita.
-            </p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>💕 Mulai Mengenal</h3>
-            <p>
-                Dari percakapan kecil hingga menjadi
-                seseorang yang berarti.
-            </p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>🌷 Kenangan Bersama</h3>
-            <p>
-                Banyak cerita, banyak tawa, dan banyak
-                hal yang akan selalu kita ingat.
-            </p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>❤️ Hari Ini dan Nanti</h3>
-            <p>
-                Semoga cerita indah ini terus bertambah
-                dengan kenangan-kenangan baru.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section>
-    <h2 class="judul">Surat Kecil Untukmu 💌</h2>
-
-    <div class="letter">
-        Untuk seseorang yang selalu punya tempat
-        dalam cerita ini...
-
-        <br><br>
-
-        Terima kasih sudah hadir dan menciptakan
-        begitu banyak kenangan indah bersamaku.
-
-        Aku mungkin tidak selalu bisa memberikan
-        hal yang sempurna, tetapi aku berharap
-        setiap momen sederhana bersama bisa
-        menjadi sesuatu yang berharga.
-
-        <br><br>
-
-        Jika suatu hari kita membuka website ini lagi,
-        semoga kita masih bisa tersenyum melihat
-        semua kenangan yang pernah kita buat.
-
-        <br><br>
-
-        <b>Dengan penuh rasa sayang, untukmu. ❤️</b>
-    </div>
-</section>
-
-<section>
-    <h2 class="judul">Satu Hal yang Pasti ❤️</h2>
-    <p style="font-size:20px;line-height:2">
-        Dari sekian banyak foto yang ada,<br>
-        kenangan bersamamu adalah salah satu
-        cerita yang paling ingin kusimpan.<br><br>
-        <b>Our memories, our story, forever in my heart. 💗</b>
-    </p>
-</section>
-
-<div class="lightbox" id="lightbox" onclick="tutup()">
-    <span class="close">&times;</span>
-    <img id="gambarBesar">
 </div>
 
-<footer>
-    <p>Made with ❤️ for someone special</p>
-    <p>Our Memories © 2026</p>
-</footer>
-
 <script>
+function jawab(pesan) {
+    const hasil = document.getElementById("hasil");
 
-// Efek hati melayang
-function buatHati() {
-    const heart = document.createElement("div");
-    heart.className = "heart";
-    heart.innerHTML = "❤️";
+    hasil.style.display = "block";
+    hasil.innerHTML = pesan;
 
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.fontSize = (15 + Math.random() * 20) + "px";
-    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
-
-    document.body.appendChild(heart);
-
-    setTimeout(() => heart.remove(), 8000);
+    hasil.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+    });
 }
-
-setInterval(buatHati, 700);
-
-// Membuka foto
-function lihat(src) {
-    document.getElementById("lightbox").style.display = "flex";
-    document.getElementById("gambarBesar").src = src;
-}
-
-// Menutup foto
-function tutup() {
-    document.getElementById("lightbox").style.display = "none";
-}
-
 </script>
 
 </body>
