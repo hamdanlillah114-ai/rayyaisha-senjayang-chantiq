@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maafkan Aku ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffb6c9, #ffe0e9);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px 22px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 10px 30px #d77c9a55;
+}
+
+.heart {
+    font-size: 55px;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    50% { transform: scale(1.2); }
+}
+
+h1 {
+    color: #e75480;
+}
+
+p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.question {
+    background: #fff0f5;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    padding: 12px 17px;
+    margin: 6px;
+    border-radius: 20px;
+    background: #ff78a5;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e75480;
+    transform: scale(1.05);
+}
+
+.answer {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fff0f5;
+    border-radius: 12px;
+    color: #d63370;
+    display: none;
+    line-height: 1.6;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="heart">❤️</div>
+
+    <h1>Maafkan Aku Sayang</h1>
+
+    <p>
+        Hai sayangku... ❤️
+        <br><br>
+        maafin aku yakk, janji dehh mau berhenti
+        tapi dengan cara mengurangi bukan langsung
+        berhenti, aku ga bisa langsung berhenti gitu
+        sayang.
+        <br><br>
+        kamu juga kurangi makan yang pedes-pedes ya 
+        sayangkuuu, aku juga kawatir klo kamu sakit 
+        perutnya jadi kurangi makan pedes yaa.
+        <br><br>
+        terahir deh maafin yak sayangggkuuu....
+        <br><br>
+        Aku sayang kamu. ❤️
+    </p>
+
+    <hr>
+
+    <h3 style="color:#e75480;">
+        Aku mau tanya sesuatu...
+    </h3>
+
+    <div class="question">
+        <p>1. di maafin ga aku ini?</p>
+        <button onclick="jawab('makasih yakk sayangg udah di maafin i love ❤️')">
+            iyaaa ❤️
+        </button>
+        <button onclick="jawab('yaudah deh gapapa 🥺')">
+            NGGA 🥺
+        </button>
+    </div>
+
+    <div class="question">
+        <p>2.kamuu sayang gaa sama aku?</p>
+        <button onclick="jawab('makacii yaaa udahhh sayang sama akuuu ❤️')">
+            Iya sayangg
+        </button>
+        <button onclick="jawab('yahh berarti cuma aku dong yang sayang sama kamu ❤️')">
+            NGGA
+        </button>
+    </div>
+
+    <div id="hasil" class="answer"></div>
+
+    <hr>
+
+    <h3 style="color:#e75480;">
+        Satu pertanyaan terakhir...
+    </h3>
+
+    <p>dimaafin ngga aku ini sayanag?</p>
+
+    <div class="footer">
+        Dibuat dengan penuh ketulusan ❤️
+        <br>
+        akuu sayanggg senjayangg cantiq
+    </div>
+
+</div>
+
+<script>
+function jawab(pesan) {
+    const hasil = document.getElementById("hasil");
+
+    hasil.style.display = "block";
+    hasil.innerHTML = pesan;
+
+    hasil.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+    });
+}
+</script>
+
+</body>
+</html>
